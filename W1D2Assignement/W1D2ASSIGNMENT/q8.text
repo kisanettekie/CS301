@@ -1,0 +1,3 @@
+let a= + prompt("First number?");
+
+// it allows the entered string to convert into Number.

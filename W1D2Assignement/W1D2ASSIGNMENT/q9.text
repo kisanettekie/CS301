@@ -1,0 +1,20 @@
+Question) What is the use of || and && operators in JavaScript? 
+        Explain with an example of each. 
+
+Answer) || means or  
+const prompt= require('prompt-sync')();
+let num= prompt("enter number");
+num= parseInt(num);
+
+        if (num< 10 || num>15){
+                console.log("Print");
+        }
+console.log("------------"); 
+
+        && mean and
+
+        if(num<10 && num>15){
+                console.log("Print input");
+        }
+
+console.log("------------"); 
