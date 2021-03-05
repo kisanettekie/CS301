@@ -16,3 +16,4 @@ let product = num1*num2;
 
 return product/getGHF(num1,num2);
 }
+
