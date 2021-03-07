@@ -23,10 +23,10 @@
  * @param {function} myCallback;
  * @return {function};
  */
-    function compute (num1,num2,myCallback){
+    let compute= function (num1,num2,myCallback){
         let add= num1+num2;
         myCallback (add);
-    }
+    };
 
     compute(2,3,result);
 /**

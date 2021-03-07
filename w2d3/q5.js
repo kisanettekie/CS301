@@ -5,38 +5,48 @@
 // the two numbers.
 // Hint: search for relation between HCF and LCM.
 
+/**
+  * @param {number} num1 positive integer
+  * @param {number} num2 positive integer
+  * @returns {number} gdc
+  * process: loop from 2 to min(num/2, num/2) and test if number divides both,
+  *          last one will be the largest
+  */
+
+
+
 const prompt= require("prompt-sync")();
 let num1 = prompt("enter a number");
 let num2 = prompt("enter a number ");
-/**
- * 
- * @param {number} num1;
- * @param {number} num2;
- * @return {number};
- */
-function hcf (num1,num2){
+
+function gcd (num1,num2){
     let min= Math.min(num1,num2);
-let common=0;
+let largest=0;
 for( let i=1;i<=min ;i++){
     if(num2%i==0 && num1%i==0){
-       common=i;
+        largest=i;
     }
 }
-return common;
+return largest;
 }
-console.log(hcf(num1,num2));
+console.log(gcd(num1,num2));
+
+
+
 /**
- * 
- * @param {number} num;
- * @param {number} numb;
- * @return {number};
- */
-function lcm(num,numb){
+* @param {number} num1 positive integer
+* @param {number} num2 positive integer
+* @returns {number} lcm
+* process: loop from num1 * num2 to max(num1,num2) and see if the number can be divided evenly by both,
+            last will be lcm
+*/
+
+let lcm=function (num,numb){
     let product = num*numb;
-    let hcfresult =hcf(num,numb);
-    let result=product/hcfresult;
+    let gcdResult =gcd(num,numb);
+    let result=product/gcdResult;
 
     return result;
-}
+};
 
 console.log(lcm(20,12));
