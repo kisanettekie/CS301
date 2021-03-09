@@ -69,8 +69,58 @@
 
 
 // Q5
+function commonSuffix(strg1,strg2){
+    let index=0;
+    let count=0;
+    let ln2= strg2.length-1;
+    for(let i=strg1.length-1;i>=0;i--){
+    if(strg1[i]===strg2[ln2-count]){
+    index++;
+    count++;
+    continue;
+    }
+    break;
+    }
+    let charStart=strg1.length-index;
+    let result=strg1.slice(charStart,strg1.length);
+    return result;
+   }
+    
+   console.log(commonSuffix("chikk","learnikk"));
 
 
+   // Q6
+
+// function tittleCase(s){
+// let firstChar=s.slice(0,1);
+// let afterFirstChar=s.slice(1);
+// let toUpperFirstChar=firstChar.toUpperCase();
+// let result=toUpperFirstChar.concat( afterFirstChar);
+// return result;
+ 
+// }
+ 
+// console.log(tittleCase("chimdi"));
+ 
+// function swap(a,b){
+// let temp=a;
+// a=b;
+// b=temp;
+// console.log(a,b);
+// }
+// console.log(swap(5,4));
+
+
+//Q7
+ 
+// function getAverageAge(users){
+ 
+// let sum=0;
+// for(let i=0;i<users.length;i++){
+// sum+=users[i].age;
+// }
+// return sum/users.length;
+// }
    
 
 
