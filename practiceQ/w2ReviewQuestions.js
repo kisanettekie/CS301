@@ -119,3 +119,21 @@ console.log(secLarge([1,2,3]));
 
 //     }
 // }
+
+
+
+// function suffix(str1, str2){
+//     let count=1;
+
+//     for(let i=str1.length-1; i>=0;i--){
+//         if(str1[str1.length-1-i] === str2[str2.length-1-i]) {
+//             count++;
+//             continue;
+//         }
+//         break;
+//     }
+//     let result= str2.slice(count);
+
+//     return result;
+// }
+//     console.log(suffix("walking","leading"));
