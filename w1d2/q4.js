@@ -27,3 +27,5 @@ function getGHF1(num1,num2){
    }
    console.log(getNewGCF(24,12))
 
+   console.log('kc')
+   console.log('shizi')
